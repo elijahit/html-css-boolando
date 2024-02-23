@@ -258,3 +258,42 @@ main .shop .container .card_container .card_info h3 {
 
 
 /* ------- */
+
+/* FOOTER */
+
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+footer .left_content {
+  text-align: center;
+}
+
+footer .left_content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  fill: white;
+}
+footer .left_content ul li svg {
+  width: 24px;
+}
+
+footer .right_content nav ul {
+  display: flex;
+  column-gap: 10px;
+  justify-content: start;
+}
+
+footer .right_content nav ul li a {
+  color: white;
+}
+/* ------ */
