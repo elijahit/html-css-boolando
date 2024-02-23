@@ -237,6 +237,7 @@ main .shop .container .row {
 
 main .shop .container .card_container {
   width: 350px;
+  margin: 0 auto;
   border: 1px solid #ccc;
 }
 
@@ -297,3 +298,11 @@ footer .right_content nav ul li a {
   color: white;
 }
 /* ------ */
+
+/* WRAPPER PAGE */
+
+.wrap-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
