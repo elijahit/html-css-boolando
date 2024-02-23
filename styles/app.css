@@ -88,7 +88,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   vertical-align: baseline;
 }
 
@@ -138,6 +138,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* LAYOUT RULE */
 .container {
   max-width: 1400px;
@@ -155,6 +159,10 @@ a {
 .col-4 {
   width: calc(4 * 100% / 12);
 }
+
+.col-6 {
+  width: calc(6 * 100% / 12);
+}
 /* -------- */
 
 /* HEADER */
@@ -162,12 +170,18 @@ header {
   background-color: rgb(238, 118, 6);
   -webkit-box-shadow: 8px 6px 15px -10px #000000;
   box-shadow: 8px 6px 15px -10px #000000;
+  margin-bottom: 50px;
 }
 
 .header_wrapper {
   display: flex;
   height: 80px;
   align-items: center;
+}
+
+.header_wrapper .main_navigation {
+  width: 200px;
+  text-align: center;
 }
 
 .header_wrapper .main_navigation ul li a {
@@ -183,8 +197,13 @@ header {
   max-width: 100%;
 }
 
+.header_wrapper .secondary_navigation {
+  width: 200px;
+}
+
 .header_wrapper .secondary_navigation ul {
   display: flex;
+  justify-content: center;
   column-gap: 10px;
 }
 
@@ -197,6 +216,45 @@ header {
 /* ------- */
 
 /* MAIN */
+main .shop .container > h1,
+main .shop .container > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+main .shop .container h1 {
+  font-size: 22px;
+}
+
+main .shop .container {
+  margin-bottom: 40px;
+}
+
+main .shop .container .row {
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+main .shop .container .card_container {
+  width: 350px;
+  border: 1px solid #ccc;
+}
+
+main .shop .container .card_container .card_info {
+  margin: 10px;
+}
+
+main .shop .container .card_container .card_info h3 {
+  font-weight: bold;
+}
+
+.red-price {
+  color: red;
+}
+
+.cut-price {
+  text-decoration: line-through;
+}
 
 
 /* ------- */
